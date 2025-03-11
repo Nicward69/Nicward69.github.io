@@ -6,26 +6,82 @@ body {
     min-height: 100vh;
 }
 
+header {
+    background-color: #f8bf6f;
+    border-radius: 15px;
+    padding: 40px;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+  
+li a.active {
+    color: white;
+    background-color: #0452aa;
+}
+
+footer {
+    background-color: #f8bf6f;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.contacto p {
+    font-size: small;
+    margin: 5px 0;
+    color: #2c3e50;
+}
+
 .corner-images {
     position: relative;
     width: 100%;
     height: 100px;
 }
 
-.left-image, .right-image {
+.left-image{
     position: absolute;
-    width: 150px;
+    width: 175px;
+    height: auto;
+}
+
+.right-image {
+    position: absolute;
+    width: 120px;
     height: auto;
 }
 
 .left-image {
-    left: 20px;
-    top: 20px;
+    left: -35px;
+    top: -20px;
 }
 
 .right-image {
     right: 20px;
-    top: 20px;
+    top: -20px;
 }
 
 .content {
