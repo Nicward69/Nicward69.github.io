@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #f26419;
+    background-color: #ff8c4e;
     border-radius: 15px;
     padding: 40px;
     position: relative;
@@ -44,7 +44,7 @@ li a.active {
 }
 
 footer {
-    background-color: #f26419;
+    background-color: #ff8c4e;
     border-radius: 15px;
     padding: 20px;
     position: relative;
