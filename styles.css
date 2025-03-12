@@ -1,13 +1,13 @@
 body {
     margin: 0;
     padding: 20px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #86bbd8 0%, #86bbd8 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
 }
 
 header {
-    background-color: #f8bf6f;
+    background-color: #f26419;
     border-radius: 15px;
     padding: 40px;
     position: relative;
