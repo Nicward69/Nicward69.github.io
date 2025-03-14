@@ -171,6 +171,6 @@ h2 {
     margin-top: 20px;
 
     /* Agrega estas propiedades para escalar el contenido */
-    transform: scale(0.8); /* Escala el contenido al 80% */
+    transform: scale(1.0); /* Escala el contenido al 80% */
     transform-origin: top left; /* Mantén el contenido alineado en la esquina superior izquierda */
 }
