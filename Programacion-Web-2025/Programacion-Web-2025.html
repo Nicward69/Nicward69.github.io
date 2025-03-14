@@ -61,38 +61,26 @@
         <div class="practicas">
             <h2>Practicas</h2>
             <div class="selectorDeArchivos">
-                <label for="carpetaDePracticas">Selecciona una carpeta de práctica:</label>
-                <input type="archivos" id="carpetaDePracticas" webkitdirectory directory>
+                <label for="comboBoxPracticas">Selecciona una práctica:</label>
+                <select id="comboBoxPracticas">
+                    <option value="" disabled selected>Selecciona una práctica</option>
+                    <option value="practica1">Práctica 1: Etiquetas de agrupamiento</option>
+                    <option value="practica2">Otra práctica</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
             </div>
-            <div class="impresionDePracticas">
+            <div class="impresionDePracticas" style="display: none;">
                 <h3 id="tituloDePractica">Título de la práctica</h3>
                 <p id="descripcionDePractica">Descripción de la práctica.</p>
                 <div id="elementosUsados">
                     <h4>Elementos usados:</h4>
-                    <ul>
+                    <ul id="listaElementosUsados">
                         <!-- Lista de elementos -->
                     </ul>
                 </div>
                 <div id="resultadoDePractica">
                     <h4>Resultado:</h4>
                     <iframe id="iframePractica" src="" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="practica-etiquetas-agrupamiento">
-                <h3>Etiquetas de agrupamiento</h3>
-                <p>Esta práctica muestra el uso de etiquetas de agrupamiento en HTML, como encabezados y agrupaciones de contenido.</p>
-                <div id="elementosUsados">
-                    <h4>Elementos usados:</h4>
-                    <ul>
-                        <li>&lt;header&gt;</li>
-                        <li>&lt;main&gt;</li>
-                        <li>&lt;footer&gt;</li>
-                        <li>&lt;h1&gt; a &lt;h6&gt;</li>
-                    </ul>
-                </div>
-                <div id="resultadoDePractica">
-                    <h4>Resultado:</h4>
-                    <iframe id="iframePracticaEtiquetas" src="../Etiquetas-de-agrupacion/index.html" frameborder="0"></iframe>
                 </div>
             </div>
         </div>
@@ -106,14 +94,39 @@
         </div>
     </footer>
     <script>
-        document.getElementById('carpetasDePracicas').addEventListener('change', function(event) {
-            const files = event.target.files;
-            if (files.length > 0) {
-                const folderPath = URL.createObjectURL(files[0]);
-                document.getElementById('iframePractica').src = folderPath;
-                document.getElementById('tituloDePractica').textContent = "Práctica seleccionada";
-                document.getElementById('descripcionDePracticas').textContent = "Descripción generada automáticamente.";
-                // Aquí puedes agregar lógica para listar elementos usados si es necesario.
+        const practicas = {
+            practica1: {
+                titulo: "Etiquetas de agrupamiento",
+                descripcion: "Esta práctica muestra el uso de etiquetas de agrupamiento en HTML, como encabezados y agrupaciones de contenido.",
+                elementos: ["<header>", "<main>", "<footer>", "<h1> a <h6>"],
+                resultado: "../Etiquetas-de-agrupacion/index.html"
+            },
+            practica2: {
+                titulo: "Otra práctica",
+                descripcion: "Descripción de otra práctica.",
+                elementos: ["<div>", "<span>", "<p>"],
+                resultado: "../Otra-practica/index.html"
+            }
+        };
+
+        document.getElementById('comboBoxPracticas').addEventListener('change', function(event) {
+            const seleccion = event.target.value;
+            const practica = practicas[seleccion];
+
+            if (practica) {
+                document.getElementById('tituloDePractica').textContent = practica.titulo;
+                document.getElementById('descripcionDePractica').textContent = practica.descripcion;
+
+                const listaElementos = document.getElementById('listaElementosUsados');
+                listaElementos.innerHTML = "";
+                practica.elementos.forEach(elemento => {
+                    const li = document.createElement('li');
+                    li.textContent = elemento;
+                    listaElementos.appendChild(li);
+                });
+
+                document.getElementById('iframePractica').src = practica.resultado;
+                document.querySelector('.impresionDePracticas').style.display = "block";
             }
         });
     </script>
