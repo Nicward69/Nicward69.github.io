@@ -89,8 +89,8 @@ footer {
   grid-area: footer;
   background-color: #E0ACD5;
   min-width: 0;
-  min-height: 0;
-  position: absolute;
+  min-height: auto;
+  position: relative;
 
 }
 
