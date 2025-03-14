@@ -13,6 +13,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   background-color: #fff;
+  position: relative;
 }
 
 .container {
@@ -27,29 +28,35 @@ body {
   column-gap: 10px;
   row-gap: 16px;
   height: 95%;
+  position: relative;
 }
 
 .container * {
   border-radius: 10px;
   padding: 10px;
+  position: relative;
 }
 
 header {
   grid-area: header;
   background-color: #df5c53;
+  position: relative;
 }
 
 navigation {
   grid-area: navigation;
   background-color: #eafa73;
+  position: relative;
 }
 
 aside {
   grid-area: aside;
   background-color: #13b6c5;
+  position: relative;
 }
 
 main {
+  position: relative;
   grid-area: main;
   background-color: #3993DD;
   height: 100%;
@@ -60,27 +67,32 @@ main {
   background-color: #44CF6C;
   margin: 10px;
   height: 20rem;
+  position: relative;
 }
 
 .second-article {
   height: 27%;
+  position: relative;
 }
 
 .section {
   background-color: #A9FDAC;
   margin: 10px;
   height: 5rem;
+  position: relative;
 }
 
 .footer-main {
   background-color: #E0ACD5;
   position:relative;
   bottom:0;
+  position: relative;
 }
 
 footer {
   grid-area: footer;
   background-color: #E0ACD5;
+  position: relative;
 }
 
 article {
@@ -88,6 +100,7 @@ article {
   margin: 10px;
   padding: 15px;
   border: 1px solid #ccc;
+  position: relative;
 }
 
 section {
@@ -95,4 +108,5 @@ section {
   margin: 10px 0;
   padding: 10px;
   border: 1px dashed #bbb;
+  position: relative;
 }
