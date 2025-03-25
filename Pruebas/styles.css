@@ -1,0 +1,19 @@
+/* Estilo para el contenedor del mapa */
+#map {
+    height: 500px; /* Altura del mapa */
+    width: 100%;   /* Ancho del mapa */
+    border: 1px solid #ccc; /* Opcional: borde para visualizar el contenedor */
+  }
+  
+  /* Estilo para el cuerpo de la página */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para el encabezado */
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
