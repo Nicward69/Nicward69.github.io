@@ -17,6 +17,16 @@
     ></script>
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#map">Mapa Meteorológico</a></li>
+          <li><a href="#estadisticas">Estadísticas</a></li>
+          <li><a href="#graficas">Gráficas</a></li>
+          <li><a href="#antenas">Listado de Antenas</a></li>
+        </ul>
+      </nav>
+    </header>
     <h1>Mapa Meteorológico</h1>
     <div id="map"></div>
     <script>
@@ -31,9 +41,9 @@
       }).addTo(map);
 
       // Añade un marcador en Chetumal, Quintana Roo
-      const marker = L.marker([18.50012, -88.29614])
+      const marker = L.marker([18.519640339524397, -88.30198419022742])
         .addTo(map)
-        .bindPopup("Estación Meteorológica en Chetumal")
+        .bindPopup("Instituto Tecnológico de Chetumal")
         .openPopup();
     </script>
   </body>
