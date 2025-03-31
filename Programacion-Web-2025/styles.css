@@ -1,3 +1,35 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+nav ul li {
+    margin: 0 15px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 103, 147); /* Texto blanco */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+nav ul li a:hover {
+    background-color: #005f99, ; /* Naranja */
+    color: #ff8c4e; /*Naranja*/
+}
+  
+nav ul li a.active {
+    background-color: #ffa500; /* Naranja */
+    color: rgb(255, 255, 255); /* Texto blanco */
+}
+
+
 body {
     margin: 0;
     padding: 20px;
@@ -20,28 +52,29 @@ ul {
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
-}
-
-li {
-    float: left;
-}
+  }
   
-li a {
+  li {
+    float: left;
+  }
+    
+  li a {
     display: block;
     color: #666;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-  
-li a:hover:not(.active) {
-    background-color: #ddd;
-}
-  
-li a.active {
+  }
+    
+  li a:hover:not(.active) {
+    background-color: #005f99;
+  }
+    
+  li a.active {
     color: white;
     background-color: #0452aa;
-}
+  }
+  
 
 footer {
     background-color: #ff8c4e;
