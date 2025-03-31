@@ -13,7 +13,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white; /* Texto blanco */
+  color: rgb(0, 103, 147); /* Texto blanco */
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
@@ -21,13 +21,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #ffa500; /* Naranja */
-  color: #005f99; /* Azul oscuro */
+  background-color: #005f99, ; /* Naranja */
+  color: #ff8c4e; /*Naranja*/
 }
 
 nav ul li a.active {
   background-color: #ffa500; /* Naranja */
-  color: white; /* Texto blanco */
+  color: rgb(255, 255, 255); /* Texto blanco */
 }
 
 body {
@@ -67,7 +67,7 @@ li a {
 }
   
 li a:hover:not(.active) {
-  background-color: #ddd;
+  background-color: #005f99;
 }
   
 li a.active {
