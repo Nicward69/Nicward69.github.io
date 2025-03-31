@@ -1,4 +1,9 @@
 ========================================
+Este no es un documento final y puede ser cambiado dependiendo de la organizacion del equipo.
+Les recomiendo que le echen un ojo para hacer las prioridades.
+========================================
+
+========================================
 ROADMAP DEL PROYECTO: REDES METEOROLÓGICAS
 ========================================
 
